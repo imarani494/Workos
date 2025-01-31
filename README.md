@@ -69,3 +69,49 @@ Node.js (v16 or higher)
 npm (Node Package Manager)
 
 MongoDB (local or cloud instance)
+
+
+
+candidate-referral-system/
+├── backend/
+│   ├── config/             # Database configuration
+│   ├── controllers/        # API controllers
+│   ├── models/             # MongoDB models
+│   ├── routes/             # API routes
+│   ├── uploads/            # Store uploaded resumes
+│   ├── .env                # Environment variables
+│   ├── server.js           # Backend entry point
+│   └── package.json        # Backend dependencies
+├── frontend/
+│   ├── public/             # Static assets
+│   ├── src/
+│   │   ├── components/     # Reusable components
+│   │   ├── pages/          # Application pages
+│   │   ├── App.js          # Main application component
+│   │   ├── index.js        # Frontend entry point
+│   │   └── styles.css      # Custom CSS
+│   ├── package.json        # Frontend dependencies
+│   └── README.md           # Frontend documentation
+├── .gitignore              # Files to ignore in Git
+└── README.md               # Project documentation
+
+
+Assumptions and Limitations
+File Upload: Only PDF files are accepted for resumes.
+
+Validation: Basic email and phone number validation is implemented.
+
+Authentication: No user authentication is included (can be added as a bonus feature).
+
+Deployment: The application is designed for local development (can be deployed to platforms like Heroku or Vercel).
+
+Future Improvements
+Add user authentication (e.g., JWT or session-based login).
+
+Implement pagination for the candidate list.
+
+Add a metrics dashboard (e.g., total candidates, status distribution).
+
+Deploy the application to a cloud platform.
+
+Store resumes in cloud storage (e.g., AWS S3, Google Cloud Storage).
