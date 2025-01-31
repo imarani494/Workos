@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const CandidateCard = ({ candidate, onStatusUpdate }) => {
@@ -19,19 +18,23 @@ const CandidateCard = ({ candidate, onStatusUpdate }) => {
               {candidate.status}
             </span>
           </div>
-          <select 
-            value={candidate.status}
-            onChange={(e) => onStatusUpdate(candidate._id, e.target.value)}
-            className="form-select form-select-sm"
-          >
-            <option value="Pending">Pending</option>
-            <option value="Reviewed">Reviewed</option>
-            <option value="Hired">Hired</option>
-          </select>
+          <div>
+            <label htmlFor={`status-select-${candidate._id}`} className="visually-hidden">Update Status</label>
+            <select 
+              id={`status-select-${candidate._id}`}
+              value={candidate.status}
+              onChange={(e) => onStatusUpdate(candidate._id, e.target.value)}
+              className="form-select form-select-sm"
+            >
+              <option value="Pending">Pending</option>
+              <option value="Reviewed">Reviewed</option>
+              <option value="Hired">Hired</option>
+            </select>
+          </div>
         </div>
         {candidate.resumeUrl && (
           <a 
-            href={`http://localhost:5000/${candidate.resumeUrl}`} 
+            href={`https://workos-backend-5grb.onrender.com${candidate.resumeUrl}`} 
             className="btn btn-link btn-sm mt-3 p-0"
             target="_blank"
             rel="noopener noreferrer"
