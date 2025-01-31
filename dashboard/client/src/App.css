@@ -1,0 +1,55 @@
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+  
+  .card-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-badge {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .upload-label {
+    border: 2px dashed #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .upload-label:hover {
+    background-color: #f8f9fa;
+  }
+  
+
+
+
+  
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: white; 
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #f0a500; 
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+
+  
