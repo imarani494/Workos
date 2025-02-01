@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Candidate Referral Management System is a full-stack web application designed to streamline the process of managing candidate referrals within an organization. Built with a React frontend and a Node.js + Express backend, this application allows users to add new referrals, view and update candidate statuses, and search/filter candidates—all while maintaining a user-friendly and responsive interface.
+ ## The Candidate Referral Management System is a full-stack web application designed to streamline the process of managing candidate referrals within an organization. Built with a React frontend and a Node.js + Express backend, this application allows users to add new referrals, view and update candidate statuses, and search/filter candidates—all while maintaining a user-friendly and responsive interface.
 
 Project Type
 
@@ -10,9 +10,7 @@ Fullstack
 
 Deployed App
 
-Frontend: https://deployed-frontend.whatever
 
-Backend: https://deployed-backend.whatever
 
 Database: Hosted on MongoDB Atlas or local MongoDB instance
 
@@ -52,9 +50,7 @@ Installation & Getting Started
 
 Clone the repository and install dependencies for both frontend and backend:
 
-# Clone the repository
-git clone https://github.com/your-username/candidate-referral-system.git
-cd candidate-referral-system
+
 
 # Install backend dependencies
 cd backend
